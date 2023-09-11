@@ -15,17 +15,21 @@ body {
     flex-direction: column;
     display: flex;
     align-items: center;
+   
 }
 
 
-.img {
+.logo img {
 
-    margin-left: 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
+}
+
+.logo + .links {
+    margin: 30px;
 }
 
 
@@ -44,6 +48,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1;
 }
 
 
@@ -55,7 +60,7 @@ body {
     color: #2b2b2b;
     text-align: center;
     transition: color 0.3s;
-    flex: 1 0 40px;
+    margin-bottom: 25px;
 
 }
 
@@ -69,22 +74,21 @@ body {
 }
 
 
-.user {
-    padding: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.avatar img {
+    width: 70px;
+    height: 70px;
+    
 }
 
-.avatar {
+.avatar{
     margin-bottom: 10%;
-    width: 80px;
-    height: 80px;
-    border-radius: 80px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
     border: 1px solid black;
-    color: #2b2b2b;
-    font-size: 15px;
     align-items: center;
+    overflow: hidden;
+    background: white;
 
 }
 
@@ -93,4 +97,17 @@ body {
     cursor: pointer;
     transform: scale(1.1);
     transition: transform 0.3s;
+}
+
+
+#username {
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: red;
+    font-weight: bold;
+
+}
+
+.links ~ #username {
+    margin: 20px;
 }
